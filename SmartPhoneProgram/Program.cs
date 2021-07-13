@@ -19,16 +19,23 @@ namespace SmartPhoneProgram
             smartPhone.SetGPS(gps);
             smartPhone.SetPhone(phone);
 
+            smartPhone.TakePicture();
+            //smartPhone.Click();
+            smartPhone.Navigate();
+            smartPhone.Hangup();
+            smartPhone.Release();
+
+
             Photographer photographer = new Photographer();
-    //        photographer.Capture(smartPhone);
+            //photographer.Capture(smartPhone);
             photographer.Capture(camera);
 
             Traveller traveller = new Traveller();
-   //         traveller.Hike(smartPhone);
+            //traveller.Hike(smartPhone);
             traveller.Hike(gps);
 
             Person person = new Person();
-      //      person.Communicate(smartPhone);
+            //person.Communicate(smartPhone);
             person.Communicate(phone);
         }
     }

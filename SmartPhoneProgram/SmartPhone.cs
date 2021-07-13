@@ -11,6 +11,7 @@ namespace SmartPhoneProgram
         ICamera _camera;
         IGPS _gps;
         IPhone _phone;
+       
 
         public void SetCamera(ICamera camera)
         {
@@ -24,14 +25,13 @@ namespace SmartPhoneProgram
         {
             this._phone = phone;
         }
-
-        public void Click()
+         public void Click()
         {
             this._camera.Click();
         }
         public void Navigate()
         {
-            this._gps.Navigate();
+            _gps.Navigate();
         }
         public void Hangup()
         {
@@ -41,6 +41,9 @@ namespace SmartPhoneProgram
         {
             this._phone.Release();
         }
-
+        public void TakePicture()
+        {
+            this.Click();
+        }
     }
 }

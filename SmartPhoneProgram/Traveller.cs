@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmartPhoneProgram
 {
-    class Traveller
+    class Traveller 
     {
         public void Hike(IGPS gps)
         {
